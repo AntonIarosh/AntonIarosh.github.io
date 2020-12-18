@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+        <!-- Заголовок страницы -->
+        <title> Визитка IT разработчика </title>
+
+        <!-- Мета данные, тип данных и кодировка -->
+        <meta http-equiv="default-style" content="text/html">
+        <meta charset="utf-8">
+      
+        <!-- Мета данные, индексация -->
+        <meta name="robots" content="index, follow"> 
+
+        <!-- Мета данные, ключевы слова-->
+        <meta name="keywords" content="Разработка на PHP. Гуру разработки">
+
+        <!-- Мета данные, описание страницы-->
+        <meta name="description" content="Презентация проектов">
+
+        <!-- Иконка сайта-->
+        <link rel="shortcut icon" type="image/ico" href="images/title_site.ico">
+
+        <!-- Мета данные, адаптивность-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:type" content="website">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="preload" as="style">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="логотип" >
+            </div>
+
+            <div class="nav__greetings">
+                <h1>
+                    Привет мир
+                </h1>
+            </div>
+
+            <nav class="nav">
+                <div class="nav_links">
+                    <a href="#info" class="nav__href">Контакты</a>
+                    <br>
+                    <a href="#mail" class="nav__href">Оставить сообщение</a>
+                </div>
+                <ul class="nav__ul">
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#hobby">Увлечения</a></li>
+                    <li><a href="https://github.com/">Проекты на GitHub</a></li>
+                    <li><a href="https://gitlab.rarus.ru/web-interns/2020-group/intern-yarosh">Проекты в 1С Рарус</a></li>
+                </ul>
+            </nav>
+
+            <!-- Контакты-->
+            <div id="info" class="contacts">
+                <h2 class="contacts__h"> Мои контакты </h2>
+                <a href="https://github.com/" class="contacts__href">GitHub</a>
+                <ul class="contacts__ul">
+                    <li>elandev@yandex.ru</li>
+                    <li>telandev@gmail.com</li>
+                    <li>+7 978 112 0940</li>
+                    <li>г. Севастополь</li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <article class="about">
+                <h2 class="about__h"> Обо мне</h2>
+                <p class="about__p">
+                    <strong> Меня зовут Ярош Антон Андреевич</strong> <br>
+                    Я занимаюсь созданием  серверной части WEB контента 
+                </p>
+                <img src="images/1.jpg" alt="Моя фотогравия" height="400" width="540" class="about__img">
+
+            </article>
+            <section id="mail" class="message">
+                <form action="mailto:elandev@yandex.ru" method="post" enctype="application/x-www-form-urlencoded" class="message__form">
+                    <h3 class="message__h"> Отправить сообщение </h3>
+                    <div class="message__name">
+                        <label for="fname" class="label">Назовитесь: </label>
+                        <input type="text" name="fname" id="fname"><br>
+                    </div>
+                    <div class="message__text">
+                        <label for="text" class="label"> Ваше сообщение: </label>
+                        <textarea rows="4" cols="70" id="text">
+                        </textarea>
+                    </div>
+                    <div class="message__box">
+                        <button type="button" class="message__button">Отправить</button>
+                    </div>
+
+                  </form> 
+            </section>
+            
+            <div id="education" class="educations">
+                 <!-- Образование-->
+                <h3 class="educations__h"> Образование</h3>
+                <table class="educations__forms">
+                    <tr>
+                      <th>Вид</th>
+                      <th>Место обучения</th>
+                    </tr>
+                    <tr>
+                        <td>Информационные системы и технологии, бакалавр</td>
+                        <td>Севастопольский Государственный Университет</td>
+                      </tr>
+                    <tr>
+                      <td>Стажировка - PHP разработчик</td>
+                      <td>Компания 1С Рарус</td>
+                    </tr>
+                  </table> 
+            </div>
+            <div id="hobby" class="hobbys">
+                <h3 class="hobbys__h">
+                    Мои увлечения
+                </h3>
+                
+                <ol class="hobbys__ol">
+                    <li class="hobbys__li">Рок музыка</li>
+                    <li class="hobbys__li">Чтение обучающей литературы про программированию</li>
+                    <li class="hobbys__li">
+                        Чтение художественной литературы 
+                        <a href="https://www.livelib.ru/reader/WalknerIrisated">Моя страница на LiveLib</a>
+                    </li >
+                </ol>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__s">
+                <h4 class="footer__h"> Спасибо что заглянули</h4>
+            </div>
+
+            <nav class="nav">
+                <div class="nav_links">
+                    <a href="#info" class="nav__href">Контакты</a>
+                    <br>
+                    <a href="#mail" class="nav__href">Оставить сообщение</a>
+                </div>
+                <ul class="nav__ul">
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#hobby">Увлечения</a></li>
+                    <li><a href="https://github.com/">Проекты на GitHub</a></li>
+                    <li><a href="https://gitlab.rarus.ru/web-interns/2020-group/intern-yarosh">Проекты в 1С Рарус</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
